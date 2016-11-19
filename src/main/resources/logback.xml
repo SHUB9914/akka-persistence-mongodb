@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <contextName>Akka Persistence</contextName>
+
+    <timestamp key="timeFormat" datePattern="yyyyMMdd'T'HHmmss" timeReference="contextBirth" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%highlight([%level]) - [%date] - [%logger] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.mongodb" level="OFF"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
