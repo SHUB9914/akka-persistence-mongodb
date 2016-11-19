@@ -17,7 +17,7 @@ libraryDependencies ++= {
     "com.github.ironfish" %% "akka-persistence-mongo"  % "1.0.0-SNAPSHOT",
     "com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test",
     "org.scalatest" % "scalatest_2.11" % "3.0.1" % "test",
-    "org.dmonix.akka" %% "akka-persistence-mock" % "1.1.1" % "test"
+    "com.github.dnvriend" %% "akka-persistence-inmemory" % "1.3.14" % "test"
   )
 }
 

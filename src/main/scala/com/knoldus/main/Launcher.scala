@@ -17,7 +17,7 @@ object Launcher extends App {
 
   implicit val timeout = Timeout(50 seconds)
   val system = ActorSystem("transaction-system")
-  var transactionActor = system.actorOf(TransactionActor.props)
+  var transactionActor = system.actorOf(TransactionActor.props(10000))
 
   Await.result(transactionActor ? Credit(1000), Duration.Inf)
 
@@ -31,7 +31,7 @@ object Launcher extends App {
 
   println(">>>>>>>>>>>>>>>>>>>>> Actor Killed <<<<<<<<<<<<<<<<<<<<<<<<<")
   println(">>>>>>>>>>>>>>>>>>>>> Recovery Start <<<<<<<<<<<<<<<<<<<<<<<<<")
-  var transactionActor1 = system.actorOf(TransactionActor.props)
+  var transactionActor1 = system.actorOf(TransactionActor.props(10000))
 
   Await.result(transactionActor1 ? Credit(11000), Duration.Inf)
 
