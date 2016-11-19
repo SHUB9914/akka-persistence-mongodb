@@ -1,8 +1,10 @@
+
 package com.knoldus.events
 
 /**
- * Created by harmeet on 19/11/16.
+ * Created by Harmeet Singh(Taara) on 19/11/16.
  */
+
 sealed trait Event
 
 case class Debited(value: Double) extends Event

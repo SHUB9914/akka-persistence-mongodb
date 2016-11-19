@@ -1,3 +1,4 @@
+
 package com.knoldus.actors
 
 import java.util.UUID
@@ -15,7 +16,7 @@ import org.scalatest.exceptions.TestFailedException
 import org.scalatest.{FlatSpec, Matchers, OptionValues, TryValues}
 
 /**
- * Created by harmeet on 19/11/16.
+ * Created by Harmeet Singh(Taara) on 19/11/16.
  */
 trait PersistenceSpec extends FlatSpec with Matchers with ScalaFutures with TryValues
   with OptionValues with Eventually {
@@ -34,6 +35,7 @@ trait PersistenceSpec extends FlatSpec with Matchers with ScalaFutures with TryV
   /**
    * Returns a random UUID
    */
+
   def randomId = UUID.randomUUID.toString.take(5)
 
   /**

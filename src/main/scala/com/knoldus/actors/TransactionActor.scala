@@ -1,3 +1,4 @@
+
 package com.knoldus.actors
 
 import akka.actor.{ActorLogging, Props}
@@ -7,7 +8,7 @@ import com.knoldus.events.{Credited, Debited, Event}
 import com.knoldus.services.TransactionService
 
 /**
- * Created by harmeet on 19/11/16.
+ * Created by Harmeet Singh(Taara) on 19/11/16.
  */
 class TransactionActor(openBalance: Double) extends PersistentActor with ActorLogging {
 
