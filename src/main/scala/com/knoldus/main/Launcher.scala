@@ -14,6 +14,8 @@ import com.knoldus.commands.{Credit, Debit, GetBalance}
 /**
  * Created by Harmeet Singh(Taara) on 19/11/16.
  */
+
+//scalastyle:off
 object Launcher extends App {
 
   implicit val timeout = Timeout(50 seconds)
