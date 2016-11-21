@@ -5,3 +5,6 @@ Akka is a powerful actor based tool kit for **Concurrency**, **Parallelism** and
 In concurrent applications most of the time we are facing race conditions and deadlocks. Because of this, we are using actors for maintain state in concurrent applications, but actors are maintain state in memory. When ever the system goes fail it is difficult to recover actor state and our whole applications goes down. For maintaining actor state on secondary storage, Akka tool kit provide us tool “Persistence“.
 
 [For more detail please click on link](https://blog.knoldus.com/2016/11/21/akka-persistence-using-mongodb-part-i/)
+
+## Codeship Status
+[ ![Codeship Status for harmeetsingh0013/akka-persistence-mongodb](https://codeship.com/projects/71c54ab0-9234-0134-8182-1ed83dfd2c37/status?branch=master)](https://codeship.com/projects/186027)
