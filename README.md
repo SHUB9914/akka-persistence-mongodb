@@ -1,4 +1,4 @@
-# Akka Persistence using MongoDB
+# Akka Persistence using MongoDB 
 
 Akka is a powerful actor based tool kit for **Concurrency**, **Parallelism** and **Clustering**. But for every concurrent applications, Akka actors are not fit because Futures are another alternative for performing Concurrency. Most of the developers follow simple rules for using Future and Actors is **“Futures for Concurrency, Actors for State“**.
 
