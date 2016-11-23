@@ -1,4 +1,4 @@
-import de.johoop.cpd4sbt.ReportType.{Simple}
+import de.johoop.cpd4sbt.ReportType.{XML}
 import de.johoop.cpd4sbt._
 
 //------------------------------------
@@ -9,9 +9,9 @@ import de.johoop.cpd4sbt._
 
 enablePlugins(CopyPasteDetector)
 
-cpdReportType := Simple
+cpdReportType := XML
 
-cpdReportName := "cpd"
+cpdReportName := "cpd.xml"
 
 cpdTargetPath := target(_ / "cpd").value
 
