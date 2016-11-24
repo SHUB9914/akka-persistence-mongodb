@@ -3,7 +3,7 @@ import de.johoop.cpd4sbt._
 
 //------------------------------------
 // Setup cpd for sbt
-// Invocation: sbt cpd
+// Invocation: sbt cpd 
 // See: https://github.com/sbt/cpd4sbt
 //------------------------------------
 
